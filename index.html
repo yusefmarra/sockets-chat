@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Y Chat</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <ul id="messages">
+    </ul>
+
+    <form id="userForm">
+
+    <div  class="row">
+      <div class="col-lg-12">
+        <div class="input-group input-group-lg">
+          <form>
+            <input id="userInput" type="text" class="form-control" placeholder="Input User Name">
+            <span class="input-group-btn">
+              <button id="userButton" class="btn btn-primary" type="button">Name</button>
+            </span>
+          </form>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+    </form>
+
+    <form id="messageForm">
+
+    <div  class="row">
+      <div class="col-lg-12">
+        <div class="input-group input-group-lg">
+
+            <input id="messageInput" type="text" class="form-control" placeholder="Send Message">
+            <span class="input-group-btn">
+              <button id="sendButton" class="btn btn-primary" type="button">Send</button>
+            </span>
+
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+  </form>
+
+    <div id="userPanel" class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Users</h3>
+      </div>
+      <div class="panel-body">
+        <div id="userList">
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
